@@ -21,10 +21,10 @@ app.get("/", (req, res) => {
   res.send("APP IS RUNNING");
 });
 
-const PORT = process.env.PORT || 5000;
+const PORT = 5000;
 
 mongoose
-  .connect(process.env.CONNECTION_URL, {
+  .connect("mongodb+srv://vmago:MMvv19%26%26%402002@cluster0.3w3jv.mongodb.net/myFirstDatabase?retryWrites=true&w=majority", {
     useNewUrlParser: true,
     useUnifiedTopology: true,
   })
